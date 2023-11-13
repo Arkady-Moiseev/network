@@ -1,13 +1,8 @@
 ---
 - name: NETWORKLAB | Install and configure
-  #hosts: inetRouter
-  #  hosts: inetRouter, centralRouter, centralServer, office1Router, office1Server
   hosts: all
   become: true
-#  vars:
-#    nginx_listen_port: 8080
   tasks:
-
   - name: Disable ufw
     ansible.builtin.service:
       name: ufw
@@ -44,23 +39,6 @@
       owner: root
       group: root
       mode: 0644
-
-
-      # - name: set custom route and gateway
-      #    template:
-      #      src: "../template/50-vagrant-{{ item }}.yaml"
-      #      dest: "/etc/netplan/50-vagrant-{{ item }}.yaml"
-      #      owner: root
-      #     group: root
-      #     mode: 0644
-      #    with_items:
-      #     - inetRouter
-      #      - centralRouter
-      #     - centralServer
-      #      - office1Router
-      #      - office1Server
-      #     - office2Router
-      #     - office2Server
 
   - name: set up forward packages across routers
     sysctl:
