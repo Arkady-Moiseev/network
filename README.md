@@ -1,4 +1,11 @@
 # Network
+___
+Цель:
+* Соединить офисы в сеть согласно схеме и настроить роутинг
+* Все сервера и роутеры должны ходить в инет черз inetRouter
+* Все сервера должны видеть друг друга
+* У всех новых серверов отключить дефолт на нат (eth0/ensp03), который вагрант поднимает для связи, при нехватке сетевых интервейсов добавить по несколько адресов на интерфейс
+
 
 1) <b>Расчет характеристик сетей</b>
 ___
@@ -21,10 +28,11 @@ ___
     <tr><td>Inet — central</td><td>192.168.255.0/30</td><td>255.255.255.252</td><td>2</td><td>192.168.255.1</td><td>192.168.255.2</td><td>192.168.255.3</td></tr>
 </table>
 
-Настройка инфраструктуры:
+2) <b>Настройка инфраструктуры:</b>
 
 <a href="https://github.com/Arkady1996/network/blob/main/Vagrantfile">Vagrantfile</a>
 
 <a href="https://github.com/Arkady1996/network/blob/main/ansible.cfg">ansible.cfg</a>
 
 ansible-playbook -i hosts playbooks/<a href="https://github.com/Arkady1996/network/blob/main/playbooks/networklab.yml">networklab.yml</a>
+
