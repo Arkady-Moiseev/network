@@ -28,4 +28,3 @@ ___
 <a href="https://github.com/Arkady1996/network/blob/main/ansible.cfg">ansible.cfg</a>
 
 ansible-playbook -i hosts playbooks/<a href="https://github.com/Arkady1996/network/blob/main/playbooks/networklab.yml">networklab.yml</a>
-
