@@ -20,3 +20,12 @@ ___
   <tr><td colspan="7" align="center"><b>InetRouter — CentralRouter network</b></td></tr>
     <tr><td>Inet — central</td><td>192.168.255.0/30</td><td>255.255.255.252</td><td>2</td><td>192.168.255.1</td><td>192.168.255.2</td><td>192.168.255.3</td></tr>
 </table>
+
+Настройка инфраструктуры:
+
+<a href="https://github.com/Arkady1996/network/blob/main/Vagrantfile">Vagrantfile</a>
+
+<a href="https://github.com/Arkady1996/network/blob/main/ansible.cfg">ansible.cfg</a>
+
+ansible-playbook -i hosts playbook/<a href="https://github.com/Arkady1996/network/blob/main/playbook/networklab">networklab.yml</a>
+
